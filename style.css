@@ -1,0 +1,125 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#current-time{
+    font-family: 'Graduate';
+    color: #e12e64;
+    font-size: 7vw;
+    text-align: center;
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    
+    /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+#alarm-setup{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.colon{
+    font-size: 24px;
+}
+
+input[type=number]{
+    height: 50px;
+    font-size: 24px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submit {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e12e64;
+    border: none;
+    border-radius: 15px;
+}
+  
+#submit:hover {
+    background-color: #a00030
+}
+
+#submit:active {
+    background-color: #e12e64;
+}
+
+#am-pm{
+    background-color: white;
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+    font-size: 24px;
+    border: 2px solid;
+}
+
+
+#alarm-title{
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 30px;
+    color:#e12e64;
+    visibility: hidden;
+}
+
+
+#alarm-list{
+    padding: 0;
+    list-style-type: none;  
+    font-size: 26px;
+    word-spacing: 5px;
+}
+
+.show-alarms{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    padding-left: 1vw;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.delete-alarm{
+    padding-left: 30px;
+}
+
+.delete{
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e12e64;
+    border: none;
+    border-radius: 9px;
+}

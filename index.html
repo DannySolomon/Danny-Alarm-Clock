@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link href='https://fonts.googleapis.com/css?family=Graduate' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alarm-clock">
+        <div id="current-time"></div>
+        <div id="set-alarm">
+            <form id="alarm-setup">
+                <input type="number" id="hour" name="hour" min="0" max="12" maxlength="2"><b class="colon"> : </b>
+                <input type="number" id="min" name="min" min="0" max="59"><b class="colon"> : </b>
+                <input type="number" id="sec" name="sec" min="0" max="59">
+                <input type="button" id="am-pm" class="button" value="AM">
+                <input type="submit" id="submit" class="button" value="Set Alarm">
+            </form>
+        </div>
+        <div id="alarm">
+            <div id="alarm-title">Alarms</div>
+            <div id="alarm-list-container">
+                <ul id="alarm-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
